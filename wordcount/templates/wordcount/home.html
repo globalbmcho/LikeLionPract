@@ -1,0 +1,9 @@
+<h1>Let's make word count systems</h1>
+
+<a href = "{% url 'about' %}" target="_blank">ABOUT</a>
+
+<form action = "{% url 'count' %}">
+    <textarea cols ="40" rows = "10" name = "fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count!" />
+</form>

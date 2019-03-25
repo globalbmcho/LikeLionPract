@@ -1,0 +1,15 @@
+
+<h1>The texts you wrote were consist of {{ CountTotal }} words</h1>
+<a href = "{% url 'home'%}"> Go back to home </a>
+
+<h1>Text you wrote: </h1>
+
+{{fulltext}}
+
+<h1>Word Counts:</h1>
+
+{% for word, CountTotal in dictionary %}
+{{ word }} - {{ CountTotal }}
+<br>
+
+{% endfor %}
